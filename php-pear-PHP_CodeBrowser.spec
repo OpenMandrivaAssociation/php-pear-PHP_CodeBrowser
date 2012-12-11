@@ -73,3 +73,17 @@ fi
 %{_datadir}/pear/packages/PHP_CodeBrowser.xml
 %{_datadir}/pear/data/PHP_CodeBrowser
 
+
+
+%changelog
+* Fri Dec 16 2011 Oden Eriksson <oeriksson@mandriva.com> 1.0.1-2mdv2012.0
++ Revision: 742241
+- fix major breakage by careless packager
+
+* Wed Nov 16 2011 Oden Eriksson <oeriksson@mandriva.com> 1.0.1-1
++ Revision: 730871
+- import php-pear-PHP_CodeBrowser
+
+
+* Wed Nov 16 2011 Oden Eriksson <oeriksson@mandriva.com> 1.0.1-1mdv2010.2
+- initial Mandriva package
