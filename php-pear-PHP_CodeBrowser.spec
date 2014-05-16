@@ -1,6 +1,8 @@
 %define  upstream_name PHP_CodeBrowser
+%define __noautoreq /usr/bin/php
 
 Summary:	A code browser that augments the code with information from various QA tools
+
 Name:		php-pear-%{upstream_name}
 Version:	1.0.1
 Release:	3
@@ -49,7 +51,6 @@ install -m 644 %{upstream_name}.xml %{buildroot}%{_datadir}/pear/packages
 
 
 %files
-%defattr(-,root,root)
 %doc %{upstream_name}-%{version}/CHANGELOG.markdown
 %doc %{upstream_name}-%{version}/LICENSE
 %doc %{upstream_name}-%{version}/README.markdown
@@ -60,15 +61,3 @@ install -m 644 %{upstream_name}.xml %{buildroot}%{_datadir}/pear/packages
 
 
 
-%changelog
-* Fri Dec 16 2011 Oden Eriksson <oeriksson@mandriva.com> 1.0.1-2mdv2012.0
-+ Revision: 742241
-- fix major breakage by careless packager
-
-* Wed Nov 16 2011 Oden Eriksson <oeriksson@mandriva.com> 1.0.1-1
-+ Revision: 730871
-- import php-pear-PHP_CodeBrowser
-
-
-* Wed Nov 16 2011 Oden Eriksson <oeriksson@mandriva.com> 1.0.1-1mdv2010.2
-- initial Mandriva package
