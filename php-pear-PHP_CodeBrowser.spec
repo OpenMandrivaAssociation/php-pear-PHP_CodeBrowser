@@ -5,7 +5,7 @@ Summary:	A code browser that augments the code with information from various QA 
 
 Name:		php-pear-%{upstream_name}
 Version:	1.0.1
-Release:	3
+Release:	4
 License:	BSD
 Group:		Development/PHP
 URL:		http://www.phpunit.de/
